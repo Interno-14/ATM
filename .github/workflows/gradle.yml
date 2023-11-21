@@ -26,7 +26,7 @@ jobs:
 
     - name: Compile Java files
       run: |
-        javac -d bin -sourcepath src -cp junit-4.13.1.jar:hamcrest-core-1.3.jar src/test/*.java
+        javac -d bin -sourcepath src -cp junit-4.13.1.jar:hamcrest-core-1.3.jar -g src/test/*.java
 
     - name: Run JUnit tests
       run: |
